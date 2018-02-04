@@ -1,0 +1,418 @@
+
+@import 'partials/variables';
+
+.custom-class{
+    background-color:black;
+    opacity: 0.8;
+    height: 80px;
+    padding-top: 20px;
+    
+    .banner-text{
+       
+        li{
+            
+            font-size: 30px;
+            font-family: $secondaryFont;
+        }
+
+        a{
+            color:white;
+
+            :hover{
+               color: black;
+            }
+        }
+    }
+
+}
+
+
+.banner{
+    height: 100vh;
+    width: 100%;
+
+    .dummy-img{
+        height: 100%;
+        width: 100%;
+        background-image: url(../img/banner6.png);
+        background-position: center;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: 50%
+    }
+
+    .dummy-img2{
+        height: 100%;
+        width: 100%;
+        background-image: url(../img/banner7.png);
+        background-position: center;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: 50%;
+       
+        
+.page-title{
+    padding: 10%;
+    text-align: center;
+    img{
+        padding-bottom: 5%; 
+        width: 40%;
+        height: 40%;
+        
+    }
+    
+    }
+    }
+
+
+
+}
+
+// .cards-container{
+//     width: 100%;
+//     height:500px;
+//     .card-content{
+//         border: solid 2px black;
+//         width: 30%;
+//         height: 80%;
+//         float: left;
+//         margin-right: 1%;
+//         margin-top: 2%;
+//         margin-left: 2%;
+//         margin-bottom: 2%;
+//     }
+// }
+
+
+.cards-container{
+    padding: 20px 10px;
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 0 auto;
+    
+    border-top: 5px solid black;
+    background-image: url(../img/banner7.png);
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 50%;
+    
+   
+    :hover{
+       
+        background: black;
+       
+      
+       
+    }
+   
+
+    .card-content {
+        height: 100%;
+        width: 95%; 
+        grid-template-rows: repeat(2, 1fr);
+        padding: 30px 10px;
+    
+       
+        transform: translate(0%,0%);
+        overflow: hidden;
+
+        
+
+        
+        
+      /* .container {
+        position: relative;
+        width: 100%;
+           
+            .overlay {
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                height: 100%;
+                width: 100%;
+                opacity: 0;
+                transition: .5s ease;
+                background-color: #008CBA;
+            }
+
+            .text {
+                
+                color:black;
+                font-size: 20px;
+                position: relative;
+                top: -100%;
+                left: 50%;
+                padding: 0 5%;
+                transform: translate(-50%, -50%);
+                -ms-transform: translate(-50%, -50%);
+                text-align: justify;
+                background-color: aquamarine;
+            }
+        }*/
+      
+       
+        .content-img{
+             position: center;
+             height: 30%;
+             margin: 0 auto;
+             width: 50%; 
+             border-radius: 100%;
+             background-size: 130%;
+             background-repeat: no-repeat;
+             border: 2px solid black;
+             
+            
+        }
+
+        .content-text{
+           padding: 8% 8%; 
+            margin-top: 8%;
+            position: center;
+            color: black;
+            
+            text-transform: uppercase;
+            /*-webkit-transition: all 0.5s ease;
+            -moz-transition: all 0.5s ease;
+            -o-transition: all 0.5s ease;*/
+
+            
+        }
+
+       /*.content-text:hover {
+            color:black;
+        }*/
+     
+        #card-img1{
+            background-image: url(../img/grizzly.jpg);
+            background-position: center;
+            transition: .5s;
+        }
+        #card-img2{
+            background-image: url(../img/panda.jpg);
+            background-position: center;
+            transition: .5s;
+        }
+        #card-img3{
+            background-image: url(../img/icebear.jpg);
+            background-position: center;
+            transition: .5s;  
+        }
+    }
+
+    .card-content:hover #card-img1{
+        transform: scale(1.3);
+        opacity: 1;
+       
+    }
+
+    .card-content:hover #card-img2{
+        transform: scale(1.3);
+        opacity: 1;
+       
+    }
+
+    .card-content:hover #card-img3{
+        transform: scale(1.3);
+        opacity: 1;
+       
+    }
+
+    .card-content:hover .content-text{
+        color: white;
+    }
+
+   
+}
+
+
+.grid-container{
+    padding: 10px 10px;
+    height: 1000px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+   
+
+    border-top: 5px solid black;
+    background-image: url(../img/banner7.png);
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 50%;
+    
+    .grid-column1{
+        transform: translate(0%,0%);
+        background: black;
+        overflow: hidden;
+        border: 1px solid rgb(214, 231, 240);
+    }
+
+    .grid-column2{
+        display: grid;
+        grid-template-rows: repeat(2, 1fr);
+        
+
+        .grid-col2-row{
+            transform: translate(0%,0%);
+            background: black;
+            overflow: hidden;
+            border: 1px solid rgb(214, 231, 240);
+        }
+    }
+
+    .grid-img{
+        width: 100%;
+        height: 100%;
+        background-size: 70%;
+
+        img{
+            width: 100%;
+            transition: .5s;
+        }
+    
+        .caption{
+            position: absolute;
+            top: 40px;
+            left: 40px;
+            right: 40px;
+            bottom: 40px;
+
+            .about{
+                position: absolute;
+                top:50%;
+                transform: translateY(-50%);
+                z-index: 1;
+                padding: 20px;
+                transition: .5s;
+                text-align: center;
+                opacity: 0;
+
+                p{
+                    color: white;
+                    margin: 20px 0 0;
+                    padding: 0;
+                    font-size:16px; 
+
+                }
+            }
+        }
+
+    .caption:before{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-top: 1px solid white;
+        border-bottom: 1px solid white;
+        box-sizing: border-box;
+        transition: .5s;
+        transform: scale(0,1);
+    }
+
+    .caption:after{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-left: 1px solid white;
+        border-right: 1px solid white;
+        box-sizing: border-box;
+        transition: .5s;
+        transform: scale(1,0);
+    }
+}
+
+    .grid-column1:hover .grid-img img{
+        transform: rotate(-10deg) scale(1.3);
+        opacity: 0.10;
+    }
+
+    .grid-column1:hover .caption:before{
+        transform: scale(1,1);
+
+    }
+
+    .grid-column1:hover .caption:after{
+        transform: scale(1,1);
+
+    }
+
+    .grid-column1:hover .about{
+        opacity: 1;
+
+    }
+
+
+    .grid-col2-row:hover .grid-img img{
+        transform: rotate(-10deg) scale(1.3);
+        opacity: 0.10;
+    }
+
+    .grid-col2-row:hover .caption:before{
+        transform: scale(1,1);
+
+    }
+
+    .grid-col2-row:hover .caption:after{
+        transform: scale(1,1);
+
+    }
+
+    .grid-col2-row:hover .about{
+        opacity: 1;
+
+    }
+    
+}
+
+
+.footer{
+    height: 30%;
+    background-color: black;
+    width:100%;
+    padding-top:3%;
+    padding-bottom:5%; 
+    padding-left: 10%;
+    padding-right: 18%;
+
+    .icons{
+  
+        height: 50px;
+        width: 50px; 
+        border-radius: 50%;
+        background-size: 115%;
+        background-repeat: no-repeat;
+        float: right;
+        margin-right: 1%;   
+    }
+
+    #fb{
+    
+    background-image: url(../img/fb.png);
+    background-position: center;
+    }
+    #insta{
+    
+        background-image: url(../img/insta.png);
+        background-position: center;
+    }
+    #twitter{
+    
+        background-image: url(../img/twitter.png);
+        background-position: center;
+    }
+}
+
+
+
+
+

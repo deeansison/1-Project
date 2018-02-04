@@ -1,0 +1,19 @@
+@font-face {
+    font-family: 'Good Vibes - Demo';
+    src: url('../fonts/GoodVibes.woff2') format('woff2'),
+        url('../fonts/GoodVibes.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+$primaryFont: 'Good Vibes - Demo';
+
+@font-face {
+    font-family: 'Champagne & Limousines';
+    src: url('../fonts/ChampagneLimousines.woff2') format('woff2'),
+        url('../fonts/ChampagneLimousines.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+$secondaryFont:'Champagne & Limousines';
